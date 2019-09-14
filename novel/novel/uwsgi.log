@@ -1,0 +1,508 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Sep  7 10:02:18 2019] ***
+compiled with version: 7.3.0 on 22 July 2019 16:35:30
+os: Linux-4.15.0-60-generic #67~16.04.1-Ubuntu SMP Mon Aug 26 08:57:33 UTC 2019
+nodename: yang-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/yang/novel/novel
+writing pidfile to uwsgi.pid
+detected binary path: /home/yang/anaconda3/bin/uwsgi
+chdir() to /home/yang/novel
+your processes number limit is 15450
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.7.3 | packaged by conda-forge | (default, Jul  1 2019, 21:52:21)  [GCC 7.3.0]
+Python main interpreter initialized at 0x55a3f9ec1810
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 13 seconds on interpreter 0x55a3f9ec1810 pid: 2968 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2968)
+spawned uWSGI worker 1 (pid: 3002, cores: 2)
+spawned uWSGI worker 2 (pid: 3003, cores: 2)
+spawned uWSGI worker 3 (pid: 3005, cores: 2)
+spawned uWSGI worker 4 (pid: 3007, cores: 2)
+[pid: 3005|app: 0|req: 1/1] 127.0.0.1 () {48 vars in 871 bytes} [Sat Sep  7 10:02:51 2019] GET / => generated 4040 bytes in 1166 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3005|app: 0|req: 2/2] 127.0.0.1 () {50 vars in 933 bytes} [Sat Sep  7 10:48:18 2019] GET /user/leader => generated 310 bytes in 32 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 3005|app: 0|req: 3/3] 127.0.0.1 () {46 vars in 804 bytes} [Sat Sep  7 10:48:18 2019] GET /favicon.ico => generated 2375 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 3002|app: 0|req: 1/4] 127.0.0.1 () {50 vars in 942 bytes} [Sat Sep  7 10:48:19 2019] GET /user/login => generated 2679 bytes in 105 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+invalid request block size: 21584 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+[pid: 3002|app: 0|req: 2/5] 127.0.0.1 () {50 vars in 931 bytes} [Sat Sep  7 10:48:55 2019] GET /user/login => generated 2679 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+invalid request block size: 21584 (max 4096)...skip
+[pid: 3003|app: 0|req: 1/6] 127.0.0.1 () {54 vars in 977 bytes} [Sat Sep  7 10:49:48 2019] GET /user/login => generated 2679 bytes in 68 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+invalid request block size: 21584 (max 4096)...skip
+[pid: 3007|app: 0|req: 1/7] 127.0.0.1 () {50 vars in 937 bytes} [Sat Sep  7 10:50:13 2019] GET /user/register => generated 3453 bytes in 96 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+invalid request block size: 21584 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+[pid: 3002|app: 0|req: 3/8] 127.0.0.1 () {54 vars in 983 bytes} [Sat Sep  7 10:50:52 2019] GET /user/register => generated 3453 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3007|app: 0|req: 2/9] 127.0.0.1 () {46 vars in 872 bytes} [Sat Sep  7 10:50:54 2019] GET /user/register => generated 3453 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3007|app: 0|req: 3/10] 127.0.0.1 () {48 vars in 871 bytes} [Sat Sep  7 10:52:34 2019] GET / => generated 4040 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3005|app: 0|req: 4/11] 127.0.0.1 () {50 vars in 931 bytes} [Sat Sep  7 10:52:36 2019] GET /user/login => generated 2679 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+Not Found: /bookList.html
+[pid: 3002|app: 0|req: 4/12] 127.0.0.1 () {50 vars in 937 bytes} [Sat Sep  7 10:52:40 2019] GET /bookList.html => generated 2381 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 3005|app: 0|req: 5/13] 127.0.0.1 () {50 vars in 911 bytes} [Sat Sep  7 10:52:44 2019] GET / => generated 4040 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3002|app: 0|req: 5/14] 127.0.0.1 () {50 vars in 911 bytes} [Sat Sep  7 10:52:46 2019] GET / => generated 4040 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+Not Found: /bookList.html
+[pid: 3003|app: 0|req: 2/15] 127.0.0.1 () {50 vars in 937 bytes} [Sat Sep  7 10:52:47 2019] GET /bookList.html => generated 2381 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 3005|app: 0|req: 6/16] 127.0.0.1 () {50 vars in 933 bytes} [Sat Sep  7 10:52:49 2019] GET /user/leader => generated 310 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 3005|app: 0|req: 7/17] 127.0.0.1 () {50 vars in 933 bytes} [Sat Sep  7 10:53:05 2019] GET /user/leader => generated 310 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 3003|app: 0|req: 3/18] 127.0.0.1 () {50 vars in 942 bytes} [Sat Sep  7 10:53:06 2019] GET /user/login => generated 2679 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+invalid request block size: 21584 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Sep  7 10:57:34 2019] ***
+compiled with version: 7.3.0 on 22 July 2019 16:35:30
+os: Linux-4.15.0-60-generic #67~16.04.1-Ubuntu SMP Mon Aug 26 08:57:33 UTC 2019
+nodename: yang-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/yang/novel/novel
+writing pidfile to uwsgi.pid
+detected binary path: /home/yang/anaconda3/bin/uwsgi
+chdir() to /home/yang/novel
+your processes number limit is 15450
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.7.3 | packaged by conda-forge | (default, Jul  1 2019, 21:52:21)  [GCC 7.3.0]
+Python main interpreter initialized at 0x55e6cb62c810
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55e6cb62c810 pid: 4438 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4438)
+spawned uWSGI worker 1 (pid: 4439, cores: 2)
+spawned uWSGI worker 2 (pid: 4440, cores: 2)
+spawned uWSGI worker 3 (pid: 4442, cores: 2)
+spawned uWSGI worker 4 (pid: 4444, cores: 2)
+[pid: 4439|app: 0|req: 1/1] 127.0.0.1 () {48 vars in 871 bytes} [Sat Sep  7 10:57:43 2019] GET / => generated 4040 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 4442|app: 0|req: 1/2] 127.0.0.1 () {50 vars in 931 bytes} [Sat Sep  7 10:57:45 2019] GET /user/login => generated 2679 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 4444|app: 0|req: 1/3] 127.0.0.1 () {46 vars in 803 bytes} [Sat Sep  7 10:57:45 2019] GET /favicon.ico => generated 2375 bytes in 50 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+invalid request block size: 21584 (max 4096)...skip
+invalid request block size: 21584 (max 4096)...skip
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Sep  7 11:14:03 2019] ***
+compiled with version: 7.3.0 on 22 July 2019 16:35:30
+os: Linux-4.15.0-60-generic #67~16.04.1-Ubuntu SMP Mon Aug 26 08:57:33 UTC 2019
+nodename: yang-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/yang/novel/novel
+writing pidfile to uwsgi.pid
+detected binary path: /home/yang/anaconda3/bin/uwsgi
+chdir() to /home/yang/novel
+your processes number limit is 15450
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Sep  7 11:14:24 2019] ***
+compiled with version: 7.3.0 on 22 July 2019 16:35:30
+os: Linux-4.15.0-60-generic #67~16.04.1-Ubuntu SMP Mon Aug 26 08:57:33 UTC 2019
+nodename: yang-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/yang/novel/novel
+writing pidfile to uwsgi.pid
+detected binary path: /home/yang/anaconda3/bin/uwsgi
+chdir() to /home/yang/novel
+your processes number limit is 15450
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.7.3 | packaged by conda-forge | (default, Jul  1 2019, 21:52:21)  [GCC 7.3.0]
+Python main interpreter initialized at 0x560efd721810
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x560efd721810 pid: 5238 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5238)
+spawned uWSGI worker 1 (pid: 5239, cores: 2)
+spawned uWSGI worker 2 (pid: 5240, cores: 2)
+spawned uWSGI worker 3 (pid: 5242, cores: 2)
+spawned uWSGI worker 4 (pid: 5244, cores: 2)
+[pid: 5242|app: 0|req: 1/1] 127.0.0.1 () {52 vars in 1104 bytes} [Sat Sep  7 11:14:28 2019] GET / => generated 4040 bytes in 149 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 5242|app: 0|req: 2/2] 127.0.0.1 () {54 vars in 1164 bytes} [Sat Sep  7 11:14:30 2019] GET /user/login => generated 2674 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 5242|app: 0|req: 3/3] 127.0.0.1 () {60 vars in 1265 bytes} [Sat Sep  7 11:14:35 2019] POST /tokens => generated 33 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 354 bytes (1 switches on core 0)
+[pid: 5244|app: 0|req: 1/4] 127.0.0.1 () {54 vars in 1180 bytes} [Sat Sep  7 11:14:37 2019] GET /user/vip/yang => generated 6839 bytes in 65 msecs (HTTP/1.1 200) 5 headers in 286 bytes (1 switches on core 0)
+Not Found: /user/static/images/bitbug_favicon.ico
+[pid: 5242|app: 0|req: 4/5] 127.0.0.1 () {50 vars in 1091 bytes} [Sat Sep  7 11:14:37 2019] GET /user/static/images/bitbug_favicon.ico => generated 3364 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 5242|app: 0|req: 5/6] 127.0.0.1 () {52 vars in 1132 bytes} [Sat Sep  7 11:15:40 2019] GET /user/login => generated 2674 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 5239|app: 0|req: 1/7] 127.0.0.1 () {52 vars in 1104 bytes} [Sat Sep  7 11:15:42 2019] GET / => generated 4040 bytes in 69 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 5244|app: 0|req: 2/8] 127.0.0.1 () {54 vars in 1166 bytes} [Sat Sep  7 11:15:44 2019] GET /user/leader => generated 310 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 5240|app: 0|req: 1/9] 127.0.0.1 () {54 vars in 1175 bytes} [Sat Sep  7 11:15:46 2019] GET /user/login => generated 2674 bytes in 57 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 5244|app: 0|req: 3/10] 127.0.0.1 () {60 vars in 1265 bytes} [Sat Sep  7 11:15:50 2019] POST /tokens => generated 33 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 354 bytes (1 switches on core 0)
+[pid: 5244|app: 0|req: 4/11] 127.0.0.1 () {54 vars in 1180 bytes} [Sat Sep  7 11:15:51 2019] GET /user/vip/yang => generated 6839 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 286 bytes (1 switches on core 1)
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmciLCJleHAiOjE1Njc5MTI1NTB9.HOeB0THiCzg0tSiZzsFewnPnFe0oSA-3rbSJzdqlfko
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmciLCJleHAiOjE1Njc5MTI1NTB9.HOeB0THiCzg0tSiZzsFewnPnFe0oSA-3rbSJzdqlfko
+[pid: 5244|app: 0|req: 5/12] 127.0.0.1 () {60 vars in 1329 bytes} [Sat Sep  7 11:15:52 2019] POST /book/chapter => generated 959031 bytes in 964 msecs (HTTP/1.1 200) 5 headers in 288 bytes (1 switches on core 0)
+[pid: 5244|app: 0|req: 6/13] 127.0.0.1 () {60 vars in 1470 bytes} [Sat Sep  7 11:15:56 2019] POST /book/%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9/%E7%AC%AC%E5%85%AB%E7%AB%A0%E7%A5%9E%E7%A7%98%E7%9A%84%E8%80%81%E8%80%85/ready => generated 10238 bytes in 240 msecs (HTTP/1.1 200) 4 headers in 133 bytes (1 switches on core 1)
+Not Found: /book/斗破苍穹/static/images/bitbug_favicon.ico
+[pid: 5242|app: 0|req: 6/14] 127.0.0.1 () {50 vars in 1248 bytes} [Sat Sep  7 11:15:56 2019] GET /book/%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9/static/images/bitbug_favicon.ico => generated 3101 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 5242|app: 0|req: 7/15] 127.0.0.1 () {50 vars in 1075 bytes} [Sat Sep  7 11:25:20 2019] GET / => generated 4040 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 5242|app: 0|req: 8/16] 127.0.0.1 () {50 vars in 1111 bytes} [Sat Sep  7 11:25:29 2019] GET /user/login => generated 2742 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 5242|app: 0|req: 9/17] 127.0.0.1 () {54 vars in 1157 bytes} [Sat Sep  7 11:25:34 2019] GET /user/login => generated 2742 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Sep  7 11:25:54 2019] ***
+compiled with version: 7.3.0 on 22 July 2019 16:35:30
+os: Linux-4.15.0-60-generic #67~16.04.1-Ubuntu SMP Mon Aug 26 08:57:33 UTC 2019
+nodename: yang-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/yang/novel/novel
+writing pidfile to uwsgi.pid
+detected binary path: /home/yang/anaconda3/bin/uwsgi
+chdir() to /home/yang/novel
+your processes number limit is 15450
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.7.3 | packaged by conda-forge | (default, Jul  1 2019, 21:52:21)  [GCC 7.3.0]
+Python main interpreter initialized at 0x55c661998810
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c661998810 pid: 5531 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5531)
+spawned uWSGI worker 1 (pid: 5532, cores: 2)
+spawned uWSGI worker 2 (pid: 5533, cores: 2)
+spawned uWSGI worker 3 (pid: 5536, cores: 2)
+spawned uWSGI worker 4 (pid: 5538, cores: 2)
+[pid: 5536|app: 0|req: 1/1] 127.0.0.1 () {52 vars in 1104 bytes} [Sat Sep  7 11:26:01 2019] GET / => generated 4040 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 5532|app: 0|req: 1/2] 127.0.0.1 () {54 vars in 1164 bytes} [Sat Sep  7 11:26:05 2019] GET /user/login => generated 2742 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 5536|app: 0|req: 2/3] 127.0.0.1 () {54 vars in 1157 bytes} [Sat Sep  7 11:26:07 2019] GET /user/login => generated 2742 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 5538|app: 0|req: 1/4] 127.0.0.1 () {60 vars in 1265 bytes} [Sat Sep  7 11:26:23 2019] POST /tokens => generated 33 bytes in 58 msecs (HTTP/1.1 200) 6 headers in 354 bytes (1 switches on core 0)
+[pid: 5536|app: 0|req: 3/5] 127.0.0.1 () {52 vars in 1155 bytes} [Sat Sep  7 11:26:46 2019] GET /user/vip/yang => generated 5390 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 286 bytes (1 switches on core 0)
+[pid: 5532|app: 0|req: 2/6] 127.0.0.1 () {54 vars in 1157 bytes} [Sat Sep  7 11:27:27 2019] GET /user/login => generated 2742 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 5533|app: 0|req: 1/7] 127.0.0.1 () {60 vars in 1265 bytes} [Sat Sep  7 11:27:31 2019] POST /tokens => generated 33 bytes in 54 msecs (HTTP/1.1 200) 6 headers in 354 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Sep  7 11:28:27 2019] ***
+compiled with version: 7.3.0 on 22 July 2019 16:35:30
+os: Linux-4.15.0-60-generic #67~16.04.1-Ubuntu SMP Mon Aug 26 08:57:33 UTC 2019
+nodename: yang-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/yang/novel/novel
+writing pidfile to uwsgi.pid
+detected binary path: /home/yang/anaconda3/bin/uwsgi
+chdir() to /home/yang/novel
+your processes number limit is 15450
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.7.3 | packaged by conda-forge | (default, Jul  1 2019, 21:52:21)  [GCC 7.3.0]
+Python main interpreter initialized at 0x5556ce3a7810
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5556ce3a7810 pid: 5604 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5604)
+spawned uWSGI worker 1 (pid: 5605, cores: 2)
+spawned uWSGI worker 2 (pid: 5606, cores: 2)
+spawned uWSGI worker 3 (pid: 5608, cores: 2)
+spawned uWSGI worker 4 (pid: 5611, cores: 2)
+[pid: 5606|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 1157 bytes} [Sat Sep  7 11:28:31 2019] GET /user/login => generated 2746 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 5608|app: 0|req: 1/2] 127.0.0.1 () {60 vars in 1265 bytes} [Sat Sep  7 11:28:36 2019] POST /tokens => generated 33 bytes in 54 msecs (HTTP/1.1 200) 6 headers in 354 bytes (1 switches on core 0)
+[pid: 5611|app: 0|req: 1/3] 127.0.0.1 () {54 vars in 1180 bytes} [Sat Sep  7 11:28:39 2019] GET /user/vip/yang => generated 5390 bytes in 60 msecs (HTTP/1.1 200) 5 headers in 286 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Sep  7 11:29:48 2019] ***
+compiled with version: 7.3.0 on 22 July 2019 16:35:30
+os: Linux-4.15.0-60-generic #67~16.04.1-Ubuntu SMP Mon Aug 26 08:57:33 UTC 2019
+nodename: yang-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/yang/novel/novel
+writing pidfile to uwsgi.pid
+detected binary path: /home/yang/anaconda3/bin/uwsgi
+chdir() to /home/yang/novel
+your processes number limit is 15450
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.7.3 | packaged by conda-forge | (default, Jul  1 2019, 21:52:21)  [GCC 7.3.0]
+Python main interpreter initialized at 0x55f500ab2810
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f500ab2810 pid: 5679 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5679)
+spawned uWSGI worker 1 (pid: 5680, cores: 2)
+spawned uWSGI worker 2 (pid: 5681, cores: 2)
+spawned uWSGI worker 3 (pid: 5683, cores: 2)
+spawned uWSGI worker 4 (pid: 5686, cores: 2)
+[pid: 5681|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 1157 bytes} [Sat Sep  7 11:29:52 2019] GET / => generated 4040 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 5683|app: 0|req: 1/2] 127.0.0.1 () {54 vars in 1164 bytes} [Sat Sep  7 11:29:53 2019] GET /user/login => generated 2721 bytes in 50 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 5680|app: 0|req: 1/3] 127.0.0.1 () {60 vars in 1265 bytes} [Sat Sep  7 11:29:56 2019] POST /tokens => generated 33 bytes in 52 msecs (HTTP/1.1 200) 6 headers in 354 bytes (1 switches on core 0)
+[pid: 5686|app: 0|req: 1/4] 127.0.0.1 () {54 vars in 1180 bytes} [Sat Sep  7 11:29:57 2019] GET /user/vip/yang => generated 5390 bytes in 57 msecs (HTTP/1.1 200) 5 headers in 286 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Sep  7 11:32:28 2019] ***
+compiled with version: 7.3.0 on 22 July 2019 16:35:30
+os: Linux-4.15.0-60-generic #67~16.04.1-Ubuntu SMP Mon Aug 26 08:57:33 UTC 2019
+nodename: yang-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/yang/novel/novel
+writing pidfile to uwsgi.pid
+detected binary path: /home/yang/anaconda3/bin/uwsgi
+chdir() to /home/yang/novel
+your processes number limit is 15450
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.7.3 | packaged by conda-forge | (default, Jul  1 2019, 21:52:21)  [GCC 7.3.0]
+Python main interpreter initialized at 0x55839d5d4810
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55839d5d4810 pid: 5749 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5749)
+spawned uWSGI worker 1 (pid: 5750, cores: 2)
+spawned uWSGI worker 2 (pid: 5751, cores: 2)
+spawned uWSGI worker 3 (pid: 5753, cores: 2)
+spawned uWSGI worker 4 (pid: 5756, cores: 2)
+[pid: 5753|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 1157 bytes} [Sat Sep  7 11:32:32 2019] GET / => generated 4040 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 5756|app: 0|req: 1/2] 127.0.0.1 () {54 vars in 1170 bytes} [Sat Sep  7 11:32:34 2019] GET /user/register => generated 3489 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 5750|app: 0|req: 1/3] 127.0.0.1 () {60 vars in 1278 bytes} [Sat Sep  7 11:32:53 2019] POST /user/users => generated 51 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 5756|app: 0|req: 2/4] 127.0.0.1 () {60 vars in 1278 bytes} [Sat Sep  7 11:32:59 2019] POST /user/users => generated 190 bytes in 81 msecs (HTTP/1.1 200) 6 headers in 360 bytes (1 switches on core 1)
+[pid: 5756|app: 0|req: 3/5] 127.0.0.1 () {54 vars in 1328 bytes} [Sat Sep  7 11:33:01 2019] GET /user/vip/yang11 => generated 5398 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 286 bytes (1 switches on core 0)
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmcxMSIsImV4cCI6MTU2NzkxMzU3OX0.m4DK8jzfxC6_kMg8Xuis70w_MtDvhCF8KxX4I9aYQ3U
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmcxMSIsImV4cCI6MTU2NzkxMzU3OX0.m4DK8jzfxC6_kMg8Xuis70w_MtDvhCF8KxX4I9aYQ3U
+[pid: 5756|app: 0|req: 4/6] 127.0.0.1 () {60 vars in 1472 bytes} [Sat Sep  7 11:33:06 2019] POST /book/chapter => generated 962293 bytes in 164 msecs (HTTP/1.1 200) 5 headers in 288 bytes (1 switches on core 1)
+[pid: 5756|app: 0|req: 5/7] 127.0.0.1 () {60 vars in 1611 bytes} [Sat Sep  7 11:33:08 2019] POST /book/%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9/%E7%AC%AC%E4%B8%80%E7%AB%A0%E9%99%A8%E8%90%BD%E7%9A%84%E5%A4%A9%E6%89%8D/ready => generated 11522 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 133 bytes (1 switches on core 0)
+[pid: 5756|app: 0|req: 6/8] 127.0.0.1 () {54 vars in 1405 bytes} [Sat Sep  7 11:33:10 2019] GET / => generated 4040 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+Not Found: /bookList.html
+[pid: 5751|app: 0|req: 1/9] 127.0.0.1 () {54 vars in 1311 bytes} [Sat Sep  7 11:33:11 2019] GET /bookList.html => generated 2381 bytes in 40 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 5756|app: 0|req: 7/10] 127.0.0.1 () {52 vars in 1373 bytes} [Sat Sep  7 11:33:13 2019] GET / => generated 4040 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+...brutally killing workers...
+Gracefully killing worker 2 (pid: 5751)...
+Gracefully killing worker 1 (pid: 5750)...
+Gracefully killing worker 4 (pid: 5756)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/yang/novel/novel
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:8000)
+running /home/yang/anaconda3/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Sep  7 18:23:57 2019] ***
+compiled with version: 7.3.0 on 22 July 2019 16:35:30
+os: Linux-4.15.0-60-generic #67~16.04.1-Ubuntu SMP Mon Aug 26 08:57:33 UTC 2019
+nodename: yang-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/yang/novel/novel
+detected binary path: /home/yang/anaconda3/bin/uwsgi
+chdir() to /home/yang/novel
+your processes number limit is 15450
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8000 fd 3
+Python version: 3.7.3 | packaged by conda-forge | (default, Jul  1 2019, 21:52:21)  [GCC 7.3.0]
+Python main interpreter initialized at 0x556025928240
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x556025928240 pid: 5749 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 5749)
+spawned uWSGI worker 1 (pid: 6711, cores: 2)
+spawned uWSGI worker 2 (pid: 6712, cores: 2)
+spawned uWSGI worker 3 (pid: 6714, cores: 2)
+spawned uWSGI worker 4 (pid: 6716, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Sep  9 19:35:51 2019] ***
+compiled with version: 7.3.0 on 22 July 2019 16:35:30
+os: Linux-4.15.0-60-generic #67~16.04.1-Ubuntu SMP Mon Aug 26 08:57:33 UTC 2019
+nodename: yang-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/yang/novel/novel
+writing pidfile to uwsgi.pid
+detected binary path: /home/yang/anaconda3/bin/uwsgi
+chdir() to /home/yang/novel
+your processes number limit is 15450
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.7.3 | packaged by conda-forge | (default, Jul  1 2019, 21:52:21)  [GCC 7.3.0]
+Python main interpreter initialized at 0x55d6a7c8f7e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x55d6a7c8f7e0 pid: 2989 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2989)
+spawned uWSGI worker 1 (pid: 3004, cores: 2)
+spawned uWSGI worker 2 (pid: 3005, cores: 2)
+spawned uWSGI worker 3 (pid: 3006, cores: 2)
+spawned uWSGI worker 4 (pid: 3009, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 3005|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 895 bytes} [Mon Sep  9 19:36:23 2019] GET / => generated 6582 bytes in 1156 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3009|app: 0|req: 1/2] 127.0.0.1 () {50 vars in 933 bytes} [Mon Sep  9 19:36:41 2019] GET /user/leader => generated 310 bytes in 205 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 3004|app: 0|req: 1/3] 127.0.0.1 () {46 vars in 804 bytes} [Mon Sep  9 19:36:41 2019] GET /favicon.ico => generated 2375 bytes in 89 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 3006|app: 0|req: 1/4] 127.0.0.1 () {50 vars in 942 bytes} [Mon Sep  9 19:36:43 2019] GET /user/login => generated 2501 bytes in 146 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3009|app: 0|req: 2/5] 127.0.0.1 () {56 vars in 1032 bytes} [Mon Sep  9 19:36:57 2019] POST /tokens => generated 33 bytes in 183 msecs (HTTP/1.1 200) 6 headers in 354 bytes (1 switches on core 1)
+[pid: 3009|app: 0|req: 3/6] 127.0.0.1 () {50 vars in 1127 bytes} [Mon Sep  9 19:36:58 2019] GET /user/vip/yang => generated 9750 bytes in 43 msecs (HTTP/1.1 200) 5 headers in 286 bytes (1 switches on core 0)
+Not Found: /user/static/images/bitbug_favicon.ico
+[pid: 3005|app: 0|req: 2/7] 127.0.0.1 () {46 vars in 1038 bytes} [Mon Sep  9 19:36:58 2019] GET /user/static/images/bitbug_favicon.ico => generated 3764 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmciLCJleHAiOjE1NjgxMTU0MTd9.L2KvBkz1_SSePrC2JUdhLzJtkev6uymHDPIsjE3uii4
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmciLCJleHAiOjE1NjgxMTU0MTd9.L2KvBkz1_SSePrC2JUdhLzJtkev6uymHDPIsjE3uii4
+[pid: 3004|app: 0|req: 2/8] 127.0.0.1 () {58 vars in 1307 bytes} [Mon Sep  9 19:37:01 2019] POST /book/chapter => generated 75619 bytes in 326 msecs (HTTP/1.1 200) 5 headers in 287 bytes (1 switches on core 0)
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmciLCJleHAiOjE1NjgxMTU0MTd9.L2KvBkz1_SSePrC2JUdhLzJtkev6uymHDPIsjE3uii4
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmciLCJleHAiOjE1NjgxMTU0MTd9.L2KvBkz1_SSePrC2JUdhLzJtkev6uymHDPIsjE3uii4
+[pid: 3004|app: 0|req: 3/9] 127.0.0.1 () {58 vars in 1568 bytes} [Mon Sep  9 19:37:06 2019] POST /book/%E7%BA%A2%E6%A5%BC%E6%A2%A6/%E7%AC%AC%E4%B8%80%E5%9B%9E%E7%94%84%E5%A3%AB%E9%9A%90%E6%A2%A6%E5%B9%BB%E8%AF%86%E9%80%9A%E7%81%B5%E8%B4%BE%E9%9B%A8%E6%9D%91%E9%A3%8E%E5%B0%98%E6%80%80%E9%97%BA%E7%A7%80/ready => generated 24270 bytes in 1578 msecs (HTTP/1.1 200) 4 headers in 133 bytes (1 switches on core 1)
+Not Found: /book/红楼梦/static/images/bitbug_favicon.ico
+[pid: 3006|app: 0|req: 2/10] 127.0.0.1 () {46 vars in 1273 bytes} [Mon Sep  9 19:37:08 2019] GET /book/%E7%BA%A2%E6%A5%BC%E6%A2%A6/static/images/bitbug_favicon.ico => generated 3086 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 3006|app: 0|req: 3/11] 127.0.0.1 () {50 vars in 1075 bytes} [Mon Sep  9 19:38:13 2019] GET / => generated 6582 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3004|app: 0|req: 4/12] 127.0.0.1 () {50 vars in 1113 bytes} [Mon Sep  9 19:38:15 2019] GET /user/leader => generated 310 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+[pid: 3009|app: 0|req: 4/13] 127.0.0.1 () {50 vars in 1122 bytes} [Mon Sep  9 19:38:18 2019] GET /user/login => generated 2501 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3009|app: 0|req: 5/14] 127.0.0.1 () {54 vars in 1168 bytes} [Mon Sep  9 19:38:33 2019] GET /user/login => generated 2501 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3005|app: 0|req: 3/15] 127.0.0.1 () {54 vars in 1168 bytes} [Mon Sep  9 19:39:27 2019] GET /user/login => generated 2501 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 3006|app: 0|req: 4/16] 127.0.0.1 () {50 vars in 895 bytes} [Mon Sep  9 19:39:43 2019] GET / => generated 6582 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3005|app: 0|req: 4/17] 127.0.0.1 () {52 vars in 924 bytes} [Mon Sep  9 19:39:49 2019] GET / => generated 6582 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3009|app: 0|req: 6/18] 127.0.0.1 () {52 vars in 924 bytes} [Mon Sep  9 19:46:12 2019] GET / => generated 6582 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3005|app: 0|req: 5/19] 127.0.0.1 () {54 vars in 984 bytes} [Mon Sep  9 19:46:24 2019] GET /user/login => generated 2501 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 3004|app: 0|req: 5/20] 127.0.0.1 () {50 vars in 856 bytes} [Mon Sep  9 19:46:25 2019] GET /favicon.ico => generated 2375 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 3006|app: 0|req: 5/21] 127.0.0.1 () {60 vars in 1085 bytes} [Mon Sep  9 19:46:30 2019] POST /tokens => generated 33 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 354 bytes (1 switches on core 1)
+[pid: 3006|app: 0|req: 6/22] 127.0.0.1 () {54 vars in 1180 bytes} [Mon Sep  9 19:46:32 2019] GET /user/vip/yang => generated 9750 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 286 bytes (1 switches on core 0)
+Not Found: /user/static/images/bitbug_favicon.ico
+[pid: 3009|app: 0|req: 7/23] 127.0.0.1 () {50 vars in 1091 bytes} [Mon Sep  9 19:46:32 2019] GET /user/static/images/bitbug_favicon.ico => generated 3764 bytes in 4 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmciLCJleHAiOjE1NjgxMTU5OTB9.WDDwtTeTYVNRNlUi90q1epuZ2DmHF9DQRwPNjvG6g14
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmciLCJleHAiOjE1NjgxMTU5OTB9.WDDwtTeTYVNRNlUi90q1epuZ2DmHF9DQRwPNjvG6g14
+[pid: 3004|app: 0|req: 6/24] 127.0.0.1 () {60 vars in 1329 bytes} [Mon Sep  9 19:48:43 2019] POST /book/chapter => generated 8089 bytes in 46 msecs (HTTP/1.1 200) 5 headers in 286 bytes (1 switches on core 1)
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmciLCJleHAiOjE1NjgxMTU5OTB9.WDDwtTeTYVNRNlUi90q1epuZ2DmHF9DQRwPNjvG6g14
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmciLCJleHAiOjE1NjgxMTU5OTB9.WDDwtTeTYVNRNlUi90q1epuZ2DmHF9DQRwPNjvG6g14
+[pid: 3009|app: 0|req: 8/25] 127.0.0.1 () {60 vars in 1506 bytes} [Mon Sep  9 19:48:45 2019] POST /book/%E7%A5%9E%E7%9A%84%E4%B9%9D%E5%8D%81%E4%BA%BF%E4%B8%AA%E5%90%8D%E5%AD%97/%E7%AC%AC%E9%9B%B6%E7%AB%A0%E4%BD%9C%E8%80%85%E8%87%AA%E5%BA%8F/ready => generated 5887 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 1)
+Not Found: /book/神的九十亿个名字/static/images/bitbug_favicon.ico
+[pid: 3009|app: 0|req: 9/26] 127.0.0.1 () {50 vars in 1323 bytes} [Mon Sep  9 19:48:45 2019] GET /book/%E7%A5%9E%E7%9A%84%E4%B9%9D%E5%8D%81%E4%BA%BF%E4%B8%AA%E5%90%8D%E5%AD%97/static/images/bitbug_favicon.ico => generated 3161 bytes in 4 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmciLCJleHAiOjE1NjgxMTU5OTB9.WDDwtTeTYVNRNlUi90q1epuZ2DmHF9DQRwPNjvG6g14
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InlhbmciLCJleHAiOjE1NjgxMTU5OTB9.WDDwtTeTYVNRNlUi90q1epuZ2DmHF9DQRwPNjvG6g14
+[pid: 3005|app: 0|req: 6/27] 127.0.0.1 () {58 vars in 1297 bytes} [Mon Sep  9 19:48:48 2019] POST /book/chapter => generated 8089 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 286 bytes (1 switches on core 0)
+[pid: 3005|app: 0|req: 7/28] 127.0.0.1 () {52 vars in 1148 bytes} [Mon Sep  9 19:48:51 2019] GET /user/vip/yang => generated 9750 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 286 bytes (1 switches on core 1)
+[pid: 3005|app: 0|req: 8/29] 127.0.0.1 () {52 vars in 1126 bytes} [Mon Sep  9 19:57:01 2019] GET /book/upload => generated 2931 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 286 bytes (1 switches on core 0)

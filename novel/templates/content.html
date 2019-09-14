@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!doctype html>
+    <!--
+    author:ycw
+    date:2019-08
+    desc:this demo is about novel. PLEASE NOTE:If you have trouble running it ,try any of the other demos or connect with author.
+    Any individuals and organizations and not for commercial use, professional website for customized web site.
+    -->
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../static/images/bitbug_favicon.ico" type="image/x-icon"/>
+    <link href="/static/css/base.css" rel="stylesheet">
+    <link href="/static/css/index.css" rel="stylesheet">
+    <link href="/static/css/content.css" rel="stylesheet">
+    <!--    <link href="../static/css/m.css" rel="stylesheet">-->
+    <script src="/static/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/static/js/jquery.easyfader.min.js"></script>
+    <script src="/static/js/scrollReveal.js"></script>
+    <script>
+    </script>
+</head>
+<body>
+<header id="header">
+    <!--menu begin-->
+    <div class="menu">
+        <div class="nav" id="toav">
+
+            <ol>
+                <h1 class="logo"><a href="user/vip/{{user}}">群书一览晓</a></h1>
+                <li><a href="bookList.html">我的书架</a></li>
+                <li><a href="scienceList.html">科幻小说</a></li>
+                <li><a href="">玄幻小说</a></li>
+                <li><a href="">修真小说</a></li>
+                <li><a href="">都市小说</a></li>
+                <li><a href="">穿越小说</a></li>
+                <li><a href="">网游小说</a></li>
+                <li><a href="classicalList.html">古典小说</a></li>
+                <li><a href="">全部小说</a></li>
+                <li><a href="">小说排行</a></li>
+            </ol>
+            <div id="tourist">
+
+                <a href="/" id="exit" target="_Self">退出</a>
+            </div>
+
+        </div>
+
+
+    </div>
+</header>
+<div id='master'>
+    {% for i in book_content%}
+
+    <h3 class="book_content">{{ i.content}}</h3>
+    {%endfor%}
+</div>
+</body>
+</html>
